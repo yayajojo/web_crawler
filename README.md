@@ -19,7 +19,9 @@ The application needs to have an extensible interface where adding a new action 
 2. Solution:
 
 (1)  Using PHP library fabpot/goutte to crawl websites www.alexa.com and extract data.
-     Result as follows:
+
+Result as follows:
+
 ```
       shell % ./crawler top 10
       The 1 site: Google.com
@@ -34,6 +36,7 @@ The application needs to have an extensible interface where adding a new action 
       The 10 site: 360.cn
 ```
 (2)  Using abstract class iAction to create an extensible interface
- Every Aciton class should extend from abstract class iAction to implement method exec, so that ActionFactory can execute every Action class
+
+Every Aciton class should extend from abstract class iAction to implement method exec, so that ActionFactory can execute every Action class
  by simply executing exec method of Action class.
  
