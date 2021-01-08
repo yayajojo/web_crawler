@@ -6,6 +6,7 @@ use Goutte\Client;
 
 class Top extends iAction
 {
+    private $uri;
     public function __construct()
     {
         $this->uri = 'https://www.alexa.com/topsites';

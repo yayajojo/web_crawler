@@ -37,6 +37,7 @@ Result as follows:
 ```
 (2)  Using abstract class iAction to create an extensible interface
 
+
 Every Aciton class should extend from abstract class iAction to implement method exec, so that ActionFactory can execute every Action class
- by simply executing exec method of Action class.
+by simply executing exec method of Action class.
  
